@@ -1,1 +1,29 @@
+:root {
+  --bg: #0f172a;
+  --bg-soft: #111c34;
+  --panel: rgba(15, 23, 42, 0.72);
+  --panel-strong: rgba(15, 23, 42, 0.95);
+  --border: rgba(148, 163, 184, 0.16);
+  --text: #e5eefb;
+  --text-soft: #94a3b8;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.14);
+  --white: #ffffff;
+  --shadow: 0 20px 60px rgba(2, 8, 23, 0.45);
+  --radius: 24px;
+  --radius-sm: 16px;
+  --container: 1120px;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+}
