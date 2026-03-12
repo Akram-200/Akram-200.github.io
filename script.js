@@ -20,21 +20,23 @@ if (navToggle && navMenu) {
   });
 }
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.15,
-  }
-);
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
 
-revealElements.forEach((element) => observer.observe(element));
+  revealElements.forEach((element) => observer.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add('visible'));
+}
 
 const typingWords = [
   'building web apps.',
@@ -51,12 +53,23 @@ function typeEffect() {
   if (!typingText) return;
 
   const currentWord = typingWords[wordIndex];
-  const displayedText = currentWord.substring(0, charIndex);
-  typingText.textContent = displayedText;
+  typingText.textContent = currentWord.substring(0, charIndex);
 
   if (!isDeleting && charIndex < currentWord.length) {
     charIndex++;
     setTimeout(typeEffect, 85);
   } else if (isDeleting && charIndex > 0) {
     charIndex--;
+    setTimeout(typeEffect, 45);
+  } else {
+    isDeleting = !isDeleting;
+
+    if (!isDeleting) {
+      wordIndex = (wordIndex + 1) % typingWords.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 1200 : 250);
+  }
+}
+
 typeEffect();
