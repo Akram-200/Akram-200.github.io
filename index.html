@@ -1,4 +1,302 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Akram Naamane - Junior Software Developer portfolio showcasing software development projects, technical skills, and GitHub work."
+  />
+  <title>Akram Naamane | Junior Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="#top" class="logo">Akram<span>.</span></a>
+
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Montreal, Canada</p>
+          <h1>Akram Naamane</h1>
+          <h2>
+            Junior Software Developer
+            <span class="typing" id="typing-text"></span>
+          </h2>
+          <p class="hero-text">
+            Computer Programming student building practical software solutions across web,
+            desktop, and database-driven applications, with a strong interest in clean UI,
+            system structure, and real-world development projects.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="https://github.com/Akram-200" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Profile</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-card">
+              <span class="meta-label">Education</span>
+              <strong>DEC – Computer Programming</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Graduation</span>
+              <strong>May 2026</strong>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Languages</span>
+              <strong>French / English</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal delay-1">
+          <div class="panel-card">
+            <p class="panel-label">Current focus</p>
+            <h3>Building structured software projects</h3>
+            <ul>
+              <li>Web applications with Angular and Node.js</li>
+              <li>Desktop applications with C# and SQL Server</li>
+              <li>Responsive front-end interfaces with JavaScript</li>
+              <li>Documentation with SRS, ADR, and UML</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">About Me</p>
+          <h2>Building useful software with a strong technical foundation.</h2>
+        </div>
+
+        <div class="about-card reveal delay-1">
+          <p>
+            I am a Computer Programming student at <strong>Collège LaSalle in Montreal</strong>,
+            currently completing a DEC in Computer Programming with an expected graduation in
+            <strong>May 2026</strong>. I enjoy building practical applications that combine
+            user-friendly interfaces, structured backend logic, and database integration.
+          </p>
+          <p>
+            My work includes web applications, desktop systems, and front-end projects focused
+            on responsiveness, validation, and usability. I am especially interested in software
+            architecture, REST APIs, and turning project requirements into clean, maintainable
+            solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Skills</p>
+          <h2>Technologies and concepts I use in my projects.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Programming</h3>
+            <div class="chip-group">
+              <span class="chip">C#</span>
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">PHP</span>
+              <span class="chip">TypeScript</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <h3>Front-End</h3>
+            <div class="chip-group">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Angular</span>
+              <span class="chip">Bootstrap</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-2">
+            <h3>Back-End</h3>
+            <div class="chip-group">
+              <span class="chip">Node.js</span>
+              <span class="chip">ASP.NET</span>
+              <span class="chip">PHP</span>
+              <span class="chip">REST APIs</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Databases</h3>
+            <div class="chip-group">
+              <span class="chip">SQL Server</span>
+              <span class="chip">MySQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <h3>Concepts</h3>
+            <div class="chip-group">
+              <span class="chip">UML</span>
+              <span class="chip">Software Architecture</span>
+              <span class="chip">Client / Server</span>
+              <span class="chip">Documentation</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-2">
+            <h3>Languages</h3>
+            <div class="chip-group">
+              <span class="chip">French (Fluent)</span>
+              <span class="chip">English (Working proficiency)</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Projects</p>
+          <h2>Selected projects that reflect my technical growth.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-status active">In Progress</span>
+              <h3>TeamFlow</h3>
+              <p>
+                Team management web application focused on employee management, shift scheduling,
+                attendance tracking, internal chat, and role-based authentication.
+              </p>
+            </div>
+            <div class="project-body">
+              <p>
+                Built around a client/server architecture using a REST API, with additional
+                technical documentation including SRS, ADR, and UML diagrams.
+              </p>
+              <div class="chip-group">
+                <span class="chip">Angular</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">REST API</span>
+                <span class="chip">UML</span>
+                <span class="chip">SRS</span>
+                <span class="chip">ADR</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Akram-200" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-top">
+              <span class="project-status">Completed</span>
+              <h3>Inventory Management System</h3>
+              <p>
+                Desktop application for managing product inventory with full CRUD operations,
+                database connectivity, and dynamic interface updates.
+              </p>
+            </div>
+            <div class="project-body">
+              <p>
+                Developed to work with SQL queries and live DataGridView refresh patterns in a
+                Windows Forms environment.
+              </p>
+              <div class="chip-group">
+                <span class="chip">C#</span>
+                <span class="chip">Windows Forms</span>
+                <span class="chip">SQL Server</span>
+                <span class="chip">CRUD</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Akram-200" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-top">
+              <span class="project-status">Completed</span>
+              <h3>Product CRUD Web App</h3>
+              <p>
+                Database-driven web application allowing users to create, read, update, and
+                delete products through a classic CRUD interface.
+              </p>
+            </div>
+            <div class="project-body">
+              <p>
+                Built with PHP, MySQL, and XAMPP to demonstrate backend integration, form
+                handling, and persistent data management.
+              </p>
+              <div class="chip-group">
+                <span class="chip">PHP</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">XAMPP</span>
+                <span class="chip">CRUD</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Akram-200" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-status">Completed</span>
+              <h3>Secure Responsive Contact Interface</h3>
+              <p>
+                Front-end form project focused on client-side validation, responsive UI behavior,
+                error messaging, input sanitization, and submission preview.
+              </p>
+            </div>
+            <div class="project-body">
+              <p>
+                Designed to demonstrate clean front-end logic, accessible feedback, and a more
+                polished user experience for interactive forms.
+              </p>
+              <div class="chip-group">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Responsive UI</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/Akram-200" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -36,7 +334,7 @@
             <strong>github.com/Akram-200</strong>
           </a>
 
-          <a class="contact-card reveal delay-2" href="#" aria-label="LinkedIn placeholder link">
+          <a class="contact-card reveal delay-2" href="#">
             <span class="contact-label">LinkedIn</span>
             <strong>Add your LinkedIn URL here</strong>
           </a>
@@ -52,6 +350,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
