@@ -126,7 +126,9 @@ img {
   transition: color 0.25s ease;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.logo:hover,
+.back-to-top:hover {
   color: var(--white);
 }
 
@@ -202,7 +204,11 @@ img {
   border-radius: 999px;
   font-weight: 700;
   border: 1px solid transparent;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .btn:hover {
