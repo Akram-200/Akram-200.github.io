@@ -3,6 +3,7 @@ const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-menu a');
 const revealElements = document.querySelectorAll('.reveal');
 const typingText = document.getElementById('typing-text');
+const topLinks = document.querySelectorAll('a[href="#top"]');
 
 if (navToggle && navMenu) {
   navToggle.addEventListener('click', () => {
@@ -20,13 +21,36 @@ if (navToggle && navMenu) {
   });
 }
 
+function handleScrollToTop(event) {
+  event.preventDefault();
+
+  if (navMenu) {
+    navMenu.classList.remove('open');
+  }
+
+  if (navToggle) {
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  document.body.classList.remove('menu-open');
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+topLinks.forEach((link) => {
+  link.addEventListener('click', handleScrollToTop);
+});
+
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(
-    (entries) => {
+    (entries, observerInstance) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+          observerInstance.unobserve(entry.target);
         }
       });
     },
